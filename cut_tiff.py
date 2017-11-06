@@ -24,5 +24,5 @@ y_size = band.YSize
 
 for i in range(0, x_size, tile_size_width):
     for j in range(0, y_size, tile_size_height):
-        cut = "gdal_translate -of GTIFF -srcwin " + str(i)+ ", " + str(j) + ", " + str(tile_size_x) + ", " + str(tile_size_y) + " " + str(in_path) + str(input_filename) + " " + str(out_path) + str(output_filename) + str(i) + "_" + str(j) + ".tif"
+        cut = "gdal_translate -of GTIFF -srcwin " + str(i)+ ", " + str(j) + ", " + str(tile_size_width) + ", " + str(tile_size_height) + " " + str(in_path) + str(input_filename) + " " + str(out_path) + str(output_filename) + str(i) + "_" + str(j) + ".tif"
         os.system(cut)
