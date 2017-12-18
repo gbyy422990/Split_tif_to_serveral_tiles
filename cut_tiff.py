@@ -6,15 +6,15 @@ import gdal
 
 #input path
 in_path = './test/'
-input_filename = 'luhe.tiff'
+input_filename = 'luhe_roadline_classes.tif'
 
 #output path
 out_path = './output/'
 output_filename = 'luhe_'
 
 #patch size
-tile_size_width = 1024
-tile_size_height = 1024
+tile_size_width = 512
+tile_size_height = 512
 
 
 ds = gdal.Open(in_path+input_filename)
